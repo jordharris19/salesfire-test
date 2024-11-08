@@ -1,7 +1,7 @@
 <template>
   <div class="search-results">
     <p v-if="productStore.loading">Loading...</p>
-    <p v-if="productStore.error">Error: {{ productStore.error }}</p>
+    <p v-if="productStore.error">Errorr: {{ productStore.error }}</p>
     <div
       class="products-container"
       v-if="productStore.products && productStore.query.length && !productStore.loading"
