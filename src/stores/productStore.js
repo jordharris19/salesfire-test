@@ -12,11 +12,13 @@ export const useProductStore = defineStore('productStore', () => {
     loading.value = true
     error.value = null
     const searchValue = query.value.length > 0 ? query.value : ''
+    const apiUrl = import.meta.env.VITE_API_URL
+    const clientId = import.meta.env.VITE_CLIENT_ID
 
     try {
-      const response = await axios.get('https://aix.salesfire.co.uk/api/searcha', {
+      const response = await axios.get(apiUrl, {
         params: {
-          client_id: 'dbf1dbc9-a940-48c2-b44b-0bb6dc63924e',
+          client_id: clientId,
           query: searchValue,
           limit: 4,
           page: 1,
