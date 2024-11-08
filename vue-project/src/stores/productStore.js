@@ -14,7 +14,7 @@ export const useProductStore = defineStore('productStore', () => {
     const searchValue = query.value.length > 0 ? query.value : ''
 
     try {
-      const response = await axios.get('/api/searcha', {
+      const response = await axios.get('https://aix.salesfire.co.uk/api/searcha', {
         params: {
           client_id: 'dbf1dbc9-a940-48c2-b44b-0bb6dc63924e',
           query: searchValue,
