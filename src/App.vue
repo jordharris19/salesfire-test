@@ -12,10 +12,12 @@ import ResultsSet from '@/components/ResultsSet.vue'
 
 <style scoped>
 .product-search-container {
-  width: 1035px;
+  max-width: 1035px;
   justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
+  margin: 20px 0;
 }
 </style>

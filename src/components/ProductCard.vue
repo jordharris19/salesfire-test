@@ -63,4 +63,10 @@ defineProps({
 .product-item a:hover {
   background: none;
 }
+
+@media screen and (max-width: 720px) {
+  .product-item {
+    width: 100%;
+  }
+}
 </style>
