@@ -31,5 +31,6 @@ a,
     padding: 0 2rem;
     display: flex;
     flex: 1;
+    justify-content: center;
   }
 }
